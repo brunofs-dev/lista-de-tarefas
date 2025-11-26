@@ -1,0 +1,86 @@
+:root {
+    --cor: #35FF00;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgba(33, 33, 33, 0.8);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    border-radius: 5px;
+    padding: .9rem;
+    border: 5px solid var(--cor)
+}
+
+.mais {
+    margin-left: 2rem;
+    border-radius: 5px;
+    padding: .9rem;
+    border: 5px solid var(--cor);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.mais:hover {
+    background-color: #35AA00;
+    color: white;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.lista {
+    display: none;
+    background-color: #99BBBB;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.lista li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border: 2px solid rgb(55, 0, 255);
+    border-radius: 10px;
+    padding: .9rem;
+}
+
+.lista button {
+    margin-left: 1rem;
+}
+
+.container-botoes button {
+    border: none;
+}
+
+.botoes-acao button {
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+    cursor: pointer;
+}
+
+.btn-concluir {
+    background-color: var(--cor);
+    color: black;
+}
+
+.btn-apagar {
+    background-color: #CC0000;
+    color: white;
+}
